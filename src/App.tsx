@@ -27,8 +27,8 @@ function Value({ value }: { value: string }) {
 
   return (
     <div className="result">
-      {params.map((s) => (
-        <>{s}</>
+      {params.map((s,x) => (
+        <Fragment key={x}>{s}</Fragment>
       ))}
     </div>
   );
