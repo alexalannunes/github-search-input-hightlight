@@ -17,7 +17,7 @@
   align-items: center;
   width: 400px;
 }
-.input.focus {
+.input:focus-within {
   outline: 2px solid #08c;
 }
 input {

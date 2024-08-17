@@ -35,18 +35,15 @@ function Value({ value }: { value: string }) {
 }
 
 function App() {
-  const [hasFocus, setFocus] = useState(false);
   const [value, setValue] = useState('repo:alexalannunes user:alexalannunes');
   return (
     <>
-      <div className={`input ${hasFocus ? 'focus' : ''}`}>
+      <div className="input">
         <Value value={value} />
         <input
           spellCheck={false}
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          onBlur={() => setFocus(false)}
-          onFocus={() => setFocus(true)}
           type="text"
         />
       </div>
