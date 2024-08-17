@@ -1,0 +1,55 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.input {
+  border: 1px solid #ccc;
+  position: relative;
+  padding: 2px 4px;
+  border-radius: 4px;
+  display: flex;
+  height: 2.3rem;
+  align-items: center;
+  width: 400px;
+}
+.input.focus {
+  outline: 2px solid #08c;
+}
+input {
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  /* magic is here */
+  color: transparent;
+  caret-color: white;
+}
+/* put this same position of input value text */
+.result {
+  position: absolute;
+  font-size: 14px;
+  font-family: sans-serif;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.4rem;
+  display: flex;
+  align-items: center;
+  padding: 0px 2px;
+  z-index: -1;
+  /* preserve space */
+  white-space: preserve;
+}
+.result .filter-value {
+  color: #3d84f6;
+  background-color: #3c64f560;
+  border-radius: 3px;
+}
