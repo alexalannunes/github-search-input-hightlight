@@ -18,7 +18,7 @@ function Value({ value }: { value: string }) {
       );
     }
     return (
-      <span key={index} className="uniq">
+      <span key={index}>
         {index !== 0 && ' '}
         {colValue[0]}
       </span>
